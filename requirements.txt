@@ -1,0 +1,7 @@
+pandas
+isort
+pytest
+mypy
+black
+ruff
+build
