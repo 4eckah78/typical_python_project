@@ -3,11 +3,11 @@ This repository provides an example of a typical Python project
 
 **NOTE** 
 
-I downloaded all folders (including "junk" ones), so you can see, what i've used during developing
+I downloaded all folders (including "junk" ones), so you can see, what i've used during the developing
 
-**FUNCRIONALITY**
+**FUNCTIONALITY**
 
-This app takes a csv file and a year and return the city and the month with highest temperature in given year
+This app takes a csv file and a year and returns the city and the month with highest temperature in the given year
 
 **USAGE**
 - run 
@@ -19,7 +19,12 @@ python -m pip install dist\weather-0.0.1-py3-none-any.whl
 python -m weather.main {csv file} {year}
 ```
 
-- the output:
+**EXAMPLE**
+- input
+```bash
+python -m weather.main GlobalLandTemperaturesByMajorCity.csv 1985
+```
+- output
 ```bash
 The hottest temperature in 1985 was in Riyadh in 8 month
 ```
