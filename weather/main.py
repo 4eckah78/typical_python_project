@@ -14,7 +14,7 @@ def get_hottest_temp(df: pd.DataFrame, year: int) -> Tuple[str, int]:
     group = df[df.dt.dt.year == year]
     group = group[group.AverageTemperature == group.AverageTemperature.max()]
     city = group.City.values[0]
-    month = group.dt.dt.month.values[0]
+    month = group.dt.dt.month_name().values[0]
     return city, month
 
 
@@ -28,4 +28,4 @@ if __name__ == "__main__":
 
     df = read_file(filename)
     city, month = get_hottest_temp(df, year)
-    print(f"The hottest temperature in {year} was in {city} in {month} month")
+    print(f"The hottest temperature in {year} was in {city} in {month}")
